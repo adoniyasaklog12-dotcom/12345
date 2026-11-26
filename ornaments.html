@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#29233a">
+    <meta name="description" content="Explore the Ornaments collections, from necklaces and earrings to bracelets and rings.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Collections | Ornaments">
+    <meta property="og:description" content="Explore the Ornaments collections, from necklaces and earrings to bracelets and rings.">
+    <title>Collections | Ornaments</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="home-brand">
+        <p class="eyebrow">Jewelry &amp; keepsakes</p>
+        <p class="site-name">Ornaments</p>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="ornaments.html" aria-current="page">Collections</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="collection-page">
+      <div class="page-heading">
+        <p class="eyebrow">A little something special</p>
+        <h1>Our collections</h1>
+        <p>Explore pieces made to complement your everyday and mark your most memorable moments.</p>
+      </div>
+
+      <nav class="chips" aria-label="Ornament categories">
+        <a href="#Necklaces">Necklaces</a>
+        <a href="#Earrings">Earrings</a>
+        <a href="#Bracelets">Bracelets</a>
+        <a href="#Rings">Rings</a>
+      </nav>
+
+      <div class="collection-layout">
+        <section class="collection-products" aria-label="Ornament categories">
+          <div class="product-grid">
+            <article class="item product-card" id="Necklaces">
+              <div class="product-art">
+                <img src="img/a.jpg" alt="Aromiq Floral Symphony perfume" width="320" height="145" loading="lazy" decoding="async">
+              </div>
+              <div class="product-copy">
+                <p class="product-type">Everyday favorite</p>
+                <h2>Necklaces</h2>
+                <p>Delicate details and statement pieces to wear close to your heart.</p>
+                <p class="product-price">450 ETB</p>
+                <button class="add-to-bag" type="button" data-add-to-bag data-product="Necklaces" data-price="450">Add to bag</button>
+              </div>
+            </article>
+
+            <article class="item product-card" id="Earrings">
+              <div class="product-art">
+                <img src="img/b.jpg" alt="Aromiq Mystic Night perfume" width="320" height="145" loading="lazy" decoding="async">
+              </div>
+              <div class="product-copy">
+                <p class="product-type">A finishing touch</p>
+                <h2>Earrings</h2>
+                <p>From subtle accents to eye-catching designs, find your perfect pair.</p>
+                <p class="product-price">620 ETB</p>
+                <button class="add-to-bag" type="button" data-add-to-bag data-product="Earrings" data-price="620">Add to bag</button>
+              </div>
+            </article>
+
+            <article class="item product-card" id="Bracelets">
+              <div class="product-art">
+                <img src="img/c.jpg" alt="Aromiq Desert Amber perfume" width="320" height="145" loading="lazy" decoding="async">
+              </div>
+              <div class="product-copy">
+                <p class="product-type">Made for layering</p>
+                <h2>Bracelets</h2>
+                <p>Wear one on its own or layer a few to make the look your own.</p>
+                <p class="product-price">380 ETB</p>
+                <button class="add-to-bag" type="button" data-add-to-bag data-product="Bracelets" data-price="380">Add to bag</button>
+              </div>
+            </article>
+
+            <article class="item product-card" id="Rings">
+              <div class="product-art">
+                <img src="img/d.jpg" alt="Aromiq Ocean Breeze perfume" width="320" height="145" loading="lazy" decoding="async">
+              </div>
+              <div class="product-copy">
+                <p class="product-type">A little keepsake</p>
+                <h2>Rings</h2>
+                <p>Discover a special detail to keep with you, every day.</p>
+                <p class="product-price">500 ETB</p>
+                <button class="add-to-bag" type="button" data-add-to-bag data-product="Rings" data-price="500">Add to bag</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="cart-panel" id="bag" aria-labelledby="bag-title">
+          <h2 id="bag-title">Your bag (<span data-bag-count>0</span>)</h2>
+          <p class="bag-status" data-bag-status role="status" aria-live="polite">Your bag is empty. Add a category to start.</p>
+          <ul class="bag-list" data-bag-list></ul>
+          <p class="bag-total">Total: <strong><span data-bag-total>0</span> ETB</strong></p>
+          <div class="cart-fields">
+            <label for="customer-name">Your name (optional)</label>
+            <input id="customer-name" type="text" autocomplete="name" data-customer-name>
+            <label for="pickup-time">Pickup time (optional)</label>
+            <input id="pickup-time" type="text" placeholder="e.g. Saturday 3 PM" data-pickup-time>
+          </div>
+          <div class="cart-actions">
+            <a class="reserve-telegram" data-reserve-telegram href="https://t.me/scp555" target="_blank" rel="noopener" aria-disabled="true" tabindex="-1">Reserve on Telegram</a>
+            <button class="copy-reservation" type="button" data-copy-reservation disabled>Copy reservation</button>
+            <button class="clear-bag" type="button" data-clear-bag disabled>Empty bag</button>
+          </div>
+          <p class="cart-note">Pickup reservation only, no delivery. Telegram opens a prefilled message; review and send it.</p>
+        </aside>
+      </div>
+    </main>
+
+    <div class="mobile-cart-bar">
+      <span>Bag (<span data-bag-count>0</span>)</span>
+      <a href="#bag">View bag</a>
+    </div>
+
+    <footer>
+      <p class="footer-brand">Ornaments</p>
+      <p>Jewelry and keepsakes for all of life's moments.</p>
+      <p><a href="contact.html">Get in touch</a></p>
+    </footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
